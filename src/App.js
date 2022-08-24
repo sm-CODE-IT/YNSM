@@ -29,7 +29,7 @@ const reducer = (state, action) => { //모든 데이터 수정
     }
     case "EDIT": {
       newState = state.map((it) =>
-        (it.id === action.data.id) ? { ...action.data } : it
+        it.id === action.data.id ?  ...action.data  : it
       );
       break;
     }
